@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Kotlin Marvel Test</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mauris est, condimentum eu eros ut, tempor pharetra velit. Maecenas pellentesque pretium tellus, eget facilisis dui posuere sit amet. Integer hendrerit nec sapien sed cursus</string>
+    <string name="network_error">There was an error while loading, tap here to try again</string>
+
+    <string name="api_private_key">e7c0cf454ee4743136f94ccfba98fcba984530f3</string>
+    <string name="api_public_key">60dde11d3d5e4b1da0d9ca63b39b9b4c</string>
 </resources>
