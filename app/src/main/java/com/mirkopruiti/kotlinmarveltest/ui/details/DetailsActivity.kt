@@ -38,10 +38,8 @@ class DetailsActivity : AppCompatActivity() {
 
             val intent = Intent(context, DetailsActivity::class.java).apply {
                 putExtra(HomeAdapter.EXTRA_CHARACTER, character)
-                putExtra(HomeAdapter.EXTRA_CHARACTER_IMAGE_TRANSITION_NAME,
-                        characterImageTransitionName)
-                putExtra(HomeAdapter.EXTRA_CHARACTER_NAME_TRANSITION_NAME,
-                        characterNameTransitionName)
+                putExtra(HomeAdapter.EXTRA_CHARACTER_IMAGE_TRANSITION_NAME, characterImageTransitionName)
+                putExtra(HomeAdapter.EXTRA_CHARACTER_NAME_TRANSITION_NAME, characterNameTransitionName)
             }
 
             val sharedElements = arrayOf(
@@ -77,6 +75,7 @@ class DetailsActivity : AppCompatActivity() {
                     .into(characterImage)
 
             characterName.text = character.name
+            setTitle(character.name ?: "Character Details");
 
         }
 

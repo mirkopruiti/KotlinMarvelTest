@@ -44,7 +44,7 @@ class DetailsComicsAdapter : RecyclerView.Adapter<ComicsViewHolder>() {
                 .load(comics[position].thumbnail!!.path + '.' + comics[position].thumbnail!!.extension)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .dontTransform()
-                .error(R.mipmap.ic_launcher)
+                .error(R.drawable.placeholder)
                 .into(holder.comicsImage)
     }
 

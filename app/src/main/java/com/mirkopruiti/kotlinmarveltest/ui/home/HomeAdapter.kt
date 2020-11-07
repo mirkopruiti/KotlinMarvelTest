@@ -57,6 +57,7 @@ class HomeAdapter : RecyclerView.Adapter<CharacterViewHolder>() {
                 .load(characters[position].thumbnail.path + '.' + characters[position].thumbnail.extension)
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .dontTransform()
+                .error(R.drawable.placeholder)
                 .into(holder.characterImage)
     }
 
